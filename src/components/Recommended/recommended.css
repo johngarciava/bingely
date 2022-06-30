@@ -1,0 +1,19 @@
+.recommendedMovies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recommended__img--figure {
+  padding: 24px;
+}
+
+.recommendedMovies__img-row {
+  max-height: 320px;
+  max-width: 250px;
+  cursor: pointer;
+}
+
+.recommendedMovies__img-row:hover {
+  transform: scale(1.03);
+}

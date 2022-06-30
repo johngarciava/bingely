@@ -1,13 +1,143 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    max-width: 100vw; 
+    overflow-x: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.no-cursor {
+    cursor: not-allowed;
+}
+
+.click {
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.click:hover {
+    transform: scale(1.1);
+}
+
+.click:active {
+    transform: scale(0.8);
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+    #searchForm {
+        margin: 0 30px;
+    }
+
+    .landing__description--title {
+        font-size: 42px;
+    }
+
+    .landing__description--sub-title {
+        font-size: 22px;
+    }
+
+    .landing__form {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .landing__description {
+        max-width: 500px;
+    }
+
+    .display-movie {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .movie__selected {
+        flex-direction: column;
+    }
+
+    .movie__selected--figure {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .movie__selected--description {
+        width: 100%;
+    }
+
+    .contact__row {
+        flex-direction: column-reverse;
+    }
+
+    .faqs {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .faq__question {
+        font-size: 16px;
+    }
+
+    .faq__answer {
+        font-size: 14px;
+    }
+
+    .display__heading-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* SMALL PHONES, LARGE SMARTPHONES */
+@media (max-width: 550px) {
+    .nav__link {
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
+    }
+
+    .landing__description--input {
+        width: 100%;
+    }
+
+    .landing__description--title {
+        font-size: 32px;
+    }
+
+    .landing__description--sub-title {
+        font-size: 20px;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+    }
+
+    .header__description--title {
+        font-size: 38px;
+    }
+
+    .header__img {
+        margin-top: 24px;
+        width: 100%;
+    }
 }
